@@ -39,7 +39,26 @@
                 padding-top: -50%;
                 background: linear-gradient(90deg, rgb(255 235 235) 0%, rgb(255 255 255) 33%, rgb(255 255 255) 66%, rgb(233 230 255) 100%)
             }
-            
+
+            .calendar-list {
+                display: flex;
+                flex-direction: column;
+            }
+            .calendar {
+                display: flex; 
+                align-items: center; 
+                justify-content: center; 
+                margin-top: 17px; 
+                align-self: center; 
+
+                height: 125px;
+            }
+            .c-future {
+                box-shadow: 0px 3px 7px 0px #7a7a7a;
+            }
+            .c-past {
+                box-shadow: 0px 3px 7px 0px #7a7a7a;
+            }
             
             @media (orientation: portrait) {
                 .content img {
@@ -62,6 +81,9 @@
                 .mini-header {
                     position: relative;
                     z-index: 5;
+                }
+                .calendar {
+                    height: fit-content;
                 }
             }
             @media only screen and (max-width: 920px) {
@@ -148,51 +170,66 @@
                     To learn more about our seasons, visit our <a href="occra.html">OCCRA</a> and <a href="first.html">FIRST</a> pages.
                 </p>
             </div>
-            <h1 class="header" style="margin-bottom: 35px;">Competition Schedule</h1>
+            <h1 class="header" style="margin-bottom: 0px;">Competition Schedule</h1>
+            <h2 class="header" style="margin-bottom: 35px;">OCCRA 2025</h2>
 
-            <div class="center" style="margin-top: 2vw;">
-                <div class="popout-header" style="display: flex; align-items: center; justify-content: center; box-shadow: inset 0px 3px 8px 0px #9e9b9b;">
-                    <div >
-                        <h1 style="margin: 0;">
-                            FIM District Milford Event
-                        </h1>
-                        <h3 style="margin: 3px 0 7px 0; color: dimgrey; display: flex; align-items: center;">
-                            <ion-icon name="location" class="icon" style="padding-right: 7px;"></ion-icon> Milford High School in Highland, MI 
-                        </h3>
-                        <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center;">
-                            <ion-icon name="calendar" class="icon" style="padding-right: 7px;"></ion-icon> February 27 to March 1, 2025 
-                        </h3>
-                        <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center;">
-                            <ion-icon name="link" class="icon" style="padding-right: 7px;"></ion-icon> <a href="https://www.thebluealliance.com/event/2025mimil">TheBlueAlliance.com</a>
-                        </h3>
-                        <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center; color: grey;">
-                            <ion-icon name="information" class="icon" style="padding-right: 7px;"></ion-icon> Event Passed
-                        </h3>
-                    </div>
-                    <img src="image/MilfordLogo.png" style="height: 80px; padding-left: 1.5vw;">
-                    </img>
-                </div>
-            </div>
-            <div class="center" style="margin-top: 1vh;">
-                <div class="popout-header" style="display: flex; align-items: center; justify-content: center; margin-top: 17px; align-self: center; box-shadow: 0px 3px 7px 0px #7a7a7a">
+            <div class="center calendar-list" style="margin-top: 1vh;">
+                <div class="popout-header calendar c-future">
                     <div>
                         <h1 style="margin: 0;">
-                            FIM District Livonia Event
+                            Oxford Highschool Qualifiers
                         </h1>
                         <h3 style="margin: 3px 0 7px 0; color: dimgrey; display: flex; align-items: center;">
-                            <ion-icon name="location" class="icon" style="padding-right: 7px;"></ion-icon> Churchill High School in Livonia, MI 
+                            <ion-icon name="location" class="icon" style="padding-right: 7px;"></ion-icon> Oxford High School in Oxford, MI 
                         </h3>
                         <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center;">
-                            <ion-icon name="calendar" class="icon" style="padding-right: 7px;"></ion-icon> March 27 to March 29, 2025 
+                            <ion-icon name="calendar" class="icon" style="padding-right: 7px;"></ion-icon> November 1st
                         </h3>
                         <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center;">
-                            <ion-icon name="link" class="icon" style="padding-right: 7px;"></ion-icon> <a href="https://www.thebluealliance.com/event/2025miliv">TheBlueAlliance.com</a>
+                            <ion-icon name="link" class="icon" style="padding-right: 7px;"></ion-icon> <i style="color: dimgrey;">No Link Available</i>
                         </h3>
                     </div>
-                    <img src="image/LivoniaLogo.png" style="height: 80px; padding-left: 1.5vw;">
+                    <img src="image/Oxford.png" style="height: 125px; padding-left: 1.5vw;">
+                    </img>
+                </div>
+                <div class="popout-header calendar c-future">
+                    <div>
+                        <h1 style="margin: 0;">
+                            Seaholm Highschool Qualifiers
+                        </h1>
+                        <h3 style="margin: 3px 0 7px 0; color: dimgrey; display: flex; align-items: center;">
+                            <ion-icon name="location" class="icon" style="padding-right: 7px;"></ion-icon> E.W. Seaholm High School in Birmingham, MI
+                        </h3>
+                        <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center;">
+                            <ion-icon name="calendar" class="icon" style="padding-right: 7px;"></ion-icon> November 15th
+                        </h3>
+                        <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center;">
+                            <ion-icon name="link" class="icon" style="padding-right: 7px;"></ion-icon> <i style="color: dimgrey;">No Link Available</i>
+                        </h3>
+                    </div>
+                    <img src="image/Seaholm.png" style="height: 125px; padding-left: 1.5vw;">
+                    </img>
+                </div>
+                <div class="popout-header calendar c-future">
+                    <div>
+                        <h1 style="margin: 0;">
+                            Marian Highschool Qualifiers
+                        </h1>
+                        <h3 style="margin: 3px 0 7px 0; color: dimgrey; display: flex; align-items: center;">
+                            <ion-icon name="location" class="icon" style="padding-right: 7px;"></ion-icon> Marian High School in Bloomfield Hills, MI
+                        </h3>
+                        <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center;">
+                            <ion-icon name="calendar" class="icon" style="padding-right: 7px;"></ion-icon> November 22nd
+                        </h3>
+                        <h3 style="margin: 3px 0 7px 0; display: flex; align-items: center;">
+                            <ion-icon name="link" class="icon" style="padding-right: 7px;"></ion-icon> <i style="color: dimgrey;">No Link Available</i>
+                        </h3>
+                    </div>
+                    <img src="image/Marian.png" style="height: 125px; padding-left: 1.5vw;">
                     </img>
                 </div>
             </div>
+
         </div>
         <footer style="margin-top: 0;">
             <ul class="social-icon">
