@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="CSS/nav.css">
     <link rel="stylesheet" href="CSS/home.css">
     <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/slideshow.css">
 
     <style>
         .body,
@@ -118,7 +119,56 @@
                 border-radius: 0px;
             }
         }
+
+        .adder {
+            height: fit-content;
+
+            .slideshow-container {
+                margin: auto;
+                padding-top: 30vw;
+                width: 800px;
+                height: 60%;
+                background-color: white;
+                box-shadow: none;
+                border: none;
+
+                box-shadow: 0px 3px 7px 0px #7a7a7a;
+            }
+
+            .prev,
+            .next {
+                color: black;
+                font-size: 6vw;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .adder {
+                height: 40vw;
+
+                .slideshow-container {
+                    padding-top: 45%;
+                    width: 90%;
+                }
+
+                .prev,
+                .next {
+                    padding: 18px 10px;
+                }
+
+                img {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .next:hover,
+        .prev:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
     </style>
+    <script defer src="js/slideshow.js"></script>
 </head>
 
 <body>
@@ -282,6 +332,20 @@
                 </div>
                 <img src="image/GRB.png">
                 </img>
+            </div>
+        </div>
+        <br>
+        <h1 class="header" style="margin-top: 35px;">Calendar
+        </h1>
+        <h2 class="header" style="margin-bottom: 20px;">FIRST 2026</h2>
+        <div class="adder">
+            <div class="slideshow-container">
+                <img src="image/calendar/January.jpg" alt="January">
+                <img src="image/calendar/February.jpg" alt="February">
+                <img src="image/calendar/March.jpg" alt="March">
+                <img src="image/calendar/April.jpg" alt="April">
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
             </div>
         </div>
     </div>
